@@ -2,7 +2,7 @@
 # Tuim
 
 
-# Motivation
+## Motivation
 
 The project goal is to fly a drone, both piloting and autonomous flight.
 
@@ -37,7 +37,7 @@ Radion controller most important activities early on are: (a) setup and bind to 
 The first hours operating a radio controller can be intimidating. There is a lot of concepts for a novice to absorb. Staying away from the controller will not help.
 Bute the larger issues are the hazards of using the equipament itself. 
 
-Using a simulator, disabling the radio will remove two of the possible hazards. First, the operation of the controller must keep away the controller from the operator torso. The radio controller works emiting radio waves and the manual advises to keep a safe distance. Second, if the radio is on, the antena must be extended. The manual warns about damage if the radio on and the antena is not extended. 
+Using a simulator, disabling the radio will remove two of the possible hazards. First, the controller operator torso must keep 20 cm, like a extended palm, away from the controller. The radio controller works emiting radio waves and the manual advises to keep a safe distance. Second, if the radio is on, the antena must be extended. The manual warns about damage if the radio on and the antena is not extended. 
 
 So, while using the simulator, always check if the radio is disabled and these two radio wave related hazards are eleminated.
 
@@ -98,3 +98,6 @@ Callibration
 
 [^10]: https://fprime.jpl.nasa.gov
 [^11]: https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/
+
+[^30]: https://oscarliang.com/setup-radiomaster-pocket/
+[^20]: https://cdn.shopify.com/s/files/1/0701/8066/7584/files/Pocket_A1.8.pdf?v=1770617495

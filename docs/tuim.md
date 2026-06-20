@@ -24,15 +24,22 @@ All of these decisions were made from the perspective of someone with no previou
 
 ## Radio Controller
 
-Radion controller setup and bind to a drone [^5][^6] and setup a simulator [^7] are the most important activities early on.
+Radion controller most important activities early on are: (a) setup and bind to a drone [^5][^6] and (b) setup a simulator [^7].
 
-Hazards:
+The first hours operating a radio controller can be intimidating. There is a lot of concepts for a novice to absorb. Staying away from the controller will not help.
+Bute the larger issues are the hazards of using the equipament itself. 
 
-wrong battery polarity
-charging unattended
+Using a simulator, disabling the radio will remove two of the possible hazards. First, the operation of the controller must keep away the controller from the operator torso. The radio controller works emiting radio waves and the manual advises to keep a safe distance. Second, if the radio is on, the antena must be extended. The manual warns about damage if the radio on and the antena is not extended. 
 
-antena down and radio on
-20 cm distance if using radio
+So, while using the simulator, always check if the radio is disabled and these two radio wave related hazards are eleminated.
+
+Bateries are neeed, even when using the radio controller with the simulator. Actually, we have not explored the option of using two separate cables for data and energy at the same time. But we believe the radio controller was designed to be used with batteries on.
+
+Batteries have some hazards that could damage the controller. A faulty battery can leak acid, blow, or catch fire. Batteries should not stay on the controller if it is not in use for some weeks, batteries can leak acid over time. It is easy to forget a device stored with batteries in.
+
+During setup, battery polarity can become an issue, because both poles are flat. We found negative pole signs on battery and the controller case. Wrong polarity could damage the controller.
+
+Lastly, the controller has a built-in charger, and it is important to not let the batteries charge unattended or near flamable material.
 
 
 Batteries

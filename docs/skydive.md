@@ -21,9 +21,9 @@ We decide to buy a radio controller that would give more information and experie
 We have decided to postpone the buy or build decision about a real drone.
 
 
-[1]: https://store.steampowered.com/app/1278060/FPV_SkyDive__FPV_Drone_Simulator/
-[2]: https://radiomasterrc.com/products/pocket-radio-controller-m2
-[3]: https://pt.aliexpress.com/item/1005005908395212.html
+[^1]: https://store.steampowered.com/app/1278060/FPV_SkyDive__FPV_Drone_Simulator/
+[^2]: https://radiomasterrc.com/products/pocket-radio-controller-m2
+[^3]: https://pt.aliexpress.com/item/1005005908395212.html
 
 
 

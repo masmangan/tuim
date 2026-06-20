@@ -15,7 +15,9 @@ A radio controller also operates on batteries, but it differs significantly from
 
 Therefore, we decided to purchase a dedicated radio controller. This allows us to learn using the same type of interface employed in real drone operations and preserves the possibility of connecting the controller to a real drone in the future.
 
-We chose the RadioMaster Pocket [^2], an affordable and widely recommended entry-level radio controller for novice pilots. The controller was purchased from an online seller [^3]. The controller came with no batteries included. We bought two batteries from a local seller [^4].
+We chose the RadioMaster Pocket [^2], an affordable and widely recommended entry-level radio controller for novice pilots. The controller was purchased from an online seller [^3]. 
+
+The controller came with no batteries included. We bought two batteries from a local seller [^4]. The model required is flat top, rechargeable, no chip.
 
 All of these decisions were made from the perspective of someone with no previous flight experience and no existing drone equipment. We chose to invest first in a radio controller because it provides practical experience and a better understanding of drone piloting. At the same time, we decided to postpone the decision of whether to buy or build a real drone.
 

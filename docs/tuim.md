@@ -1,7 +1,17 @@
 
 # Tuim
 
-## First Steps
+
+# Motivation
+
+The project goal is to fly a drone, both piloting and autonomous flight.
+
+In order to do so, we will need to explore the technologies that make modern autonomous systems possible. The first technology is the F' framework from NASA [^10]. The reason to chose this framework is that it was proven in more than one project and is open source. We have the opportunty to learn from the same framework that was part of the Ingenuity Mars helicopter [^11].
+
+
+## Required Equipment
+
+All of these decisions were made from the perspective of someone with no previous flight experience and no existing drone equipment. We chose to invest first in a radio controller because it provides practical experience and a better understanding of drone piloting. At the same time, we decided to postpone the decision of whether to buy or build a real drone.
 
 To fly a drone, we need two main components: a drone and a radio controller.
 
@@ -18,8 +28,6 @@ Therefore, we decided to purchase a dedicated radio controller. This allows us t
 We chose the RadioMaster Pocket [^2], an affordable and widely recommended entry-level radio controller for novice pilots. The controller was purchased from an online seller [^3]. 
 
 The controller came with no batteries included. We bought two batteries from a local seller [^4]. The model required is flat top, rechargeable, no chip.
-
-All of these decisions were made from the perspective of someone with no previous flight experience and no existing drone equipment. We chose to invest first in a radio controller because it provides practical experience and a better understanding of drone piloting. At the same time, we decided to postpone the decision of whether to buy or build a real drone.
 
 
 ## Radio Controller
@@ -88,3 +96,5 @@ Callibration
 
 [^7]: https://www.youtube.com/watch?v=l8S1CF4_K7Q
 
+[^10]: https://fprime.jpl.nasa.gov
+[^11]: https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/

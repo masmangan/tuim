@@ -8,11 +8,19 @@ The project goal is to fly a drone, both piloting and in autonomous flight.
 
 In order to do so, we will need to explore the technologies that make modern autonomous systems possible. The first technology is the F' framework from NASA [^10]. The reason to chose this framework is that it was proven in more than one project and is open source. We have the opportunty to learn from the same framework that was part of the Ingenuity Mars helicopter [^11].
 
-One skill
+## F' Hello Tutorial
+
+To have a first a contact with the F', we suggest you to follow the Hello Tutorial [], using Github Codespaces []. This experience will let you install software and libraries on a Linux computer, using cloud resources.
+
+We may find other similar frameworks, but we recommend to stay with F' so we can all share a similar experience.
 
 ## Required Equipment
 
-All of these decisions were made from the perspective of someone with no previous flight experience and no existing drone equipment. We chose to invest first in a radio controller because it provides practical experience and a better understanding of drone piloting. At the same time, we decided to postpone the decision of whether to buy or build a real drone.
+To have  first contact with drones, we suggest you to get a Radiomaster Pocket radio controller and log some hours on SkyDive drone simulator.
+
+You can adapt and use any controller and simulator available to you.
+
+All dwof these decisions were made from the perspective of someone with no previous flight experience and no existing drone equipment. We chose to invest first in a radio controller because it provides practical experience and a better understanding of drone piloting. At the same time, we decided to postpone the decision of whether to buy or build a real drone.
 
 To fly a drone, we need two main components: a drone and a radio controller.
 
@@ -102,3 +110,5 @@ Callibration
 
 [^30]: https://oscarliang.com/setup-radiomaster-pocket/
 [^20]: https://cdn.shopify.com/s/files/1/0701/8066/7584/files/Pocket_A1.8.pdf?v=1770617495
+
+[^40]: https://fprime.jpl.nasa.gov/latest/tutorials-hello-world/docs/hello-world/

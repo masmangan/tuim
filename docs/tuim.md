@@ -24,7 +24,15 @@ All of these decisions were made from the perspective of someone with no previou
 
 ## Radio Controller
 
-See Videos with more complete configuration
+Radion controller setup and bind to a drone [^5][^6] and setup a simulator [^7] are the most important activities early on.
+
+Hazards:
+
+wrong battery polarity
+charging unattended
+
+antena down and radio on
+20 cm distance if using radio
 
 
 Batteries
@@ -63,6 +71,13 @@ Callibration
 
 
 [^1]: https://store.steampowered.com/app/1278060/FPV_SkyDive__FPV_Drone_Simulator/
+
 [^2]: https://radiomasterrc.com/products/pocket-radio-controller-m2
 [^3]: https://pt.aliexpress.com/item/1005005908395212.html
 [^4]: https://www.eletronicasystem.com.br/produto/bateria-3-7v-2600mah-li-ion-industrial-green-cr18650-6-4x1-8cm-pilha-3-7v
+
+[^5]: https://www.youtube.com/watch?v=GgaWMvAHZi8
+[^6]: https://www.youtube.com/watch?v=YRU9JoUw9Jw
+
+[^7]: https://www.youtube.com/watch?v=l8S1CF4_K7Q
+

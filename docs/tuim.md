@@ -15,12 +15,15 @@ A radio controller also operates on batteries, but it differs significantly from
 
 Therefore, we decided to purchase a dedicated radio controller. This allows us to learn using the same type of interface employed in real drone operations and preserves the possibility of connecting the controller to a real drone in the future.
 
-We chose the RadioMaster Pocket [^2], an affordable and widely recommended entry-level radio controller for novice pilots. The controller was purchased from an online seller [^3]. The controller came with no batteries included. We bought two batteries from a local seller [ˆ4].
+We chose the RadioMaster Pocket [^2], an affordable and widely recommended entry-level radio controller for novice pilots. The controller was purchased from an online seller [^3]. The controller came with no batteries included. We bought two batteries from a local seller [^4].
 
 All of these decisions were made from the perspective of someone with no previous flight experience and no existing drone equipment. We chose to invest first in a radio controller because it provides practical experience and a better understanding of drone piloting. At the same time, we decided to postpone the decision of whether to buy or build a real drone.
 
 
 ## Radio Controller
+
+See Videos with more complete configuration
+
 
 Batteries
 
@@ -28,7 +31,7 @@ USB Cable
 
 Antena 
 
-USB Adapter
+USB Adapter from a local seller.
 
 Controller Configuration
 
@@ -36,9 +39,9 @@ Date and time
 
 Disable Radio for Simulator Use saves battery
 
+Games
 
 Throttle and Arm
-
 
 FPV Drone Model
 
@@ -46,10 +49,8 @@ Charging
 
 USB Charge bottom port
 
-
 USB HID top port
 
-Videos with configuration
 
 
 
@@ -62,4 +63,4 @@ Callibration
 [^1]: https://store.steampowered.com/app/1278060/FPV_SkyDive__FPV_Drone_Simulator/
 [^2]: https://radiomasterrc.com/products/pocket-radio-controller-m2
 [^3]: https://pt.aliexpress.com/item/1005005908395212.html
-[ˆ4]: https://www.eletronicasystem.com.br/produto/bateria-3-7v-2600mah-li-ion-industrial-green-cr18650-6-4x1-8cm-pilha-3-7v
+[^4]: https://www.eletronicasystem.com.br/produto/bateria-3-7v-2600mah-li-ion-industrial-green-cr18650-6-4x1-8cm-pilha-3-7v

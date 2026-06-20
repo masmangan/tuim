@@ -4,10 +4,11 @@
 
 ## Motivation
 
-The project goal is to fly a drone, both piloting and autonomous flight.
+The project goal is to fly a drone, both piloting and in autonomous flight.
 
 In order to do so, we will need to explore the technologies that make modern autonomous systems possible. The first technology is the F' framework from NASA [^10]. The reason to chose this framework is that it was proven in more than one project and is open source. We have the opportunty to learn from the same framework that was part of the Ingenuity Mars helicopter [^11].
 
+One skill
 
 ## Required Equipment
 

@@ -4,7 +4,7 @@
 
 ## Motivation
 
-The project goal is to fly a drone, both piloting and in autonomous flight.
+The project goal is to fly a drone, both piloting and in autonomous flight. The project goal is not only to fly a drone, but also to understand the software, hardware, communications, and control systems that make autonomous flight possible.
 
 In order to do so, we will need to explore the technologies that make modern autonomous systems possible. The first technology is the F' framework from NASA [^10]. The reason to chose this framework is that it was proven in more than one project and is open source. We have the opportunty to learn from the same framework that was part of the Ingenuity Mars helicopter [^11]. The second technology is the drone itself. We have chosen to start with a drone simulator and, ideally, a real radio controller. In this way, we can start sooner and cheaper.
 
@@ -18,15 +18,17 @@ We may find other similar frameworks, but we recommend to stay with F' so we can
 
 The idea of using Github Codespaces is that you can run all the tutorial steps from a web browser. You just need to get an account on Github.
 
-Just log in GitHub, create a new repository, select Code green button, and select Codespace tab. You will land on a VS Code running on the cloud, with access to a bash terminal.
+Just log in GitHub, create a new repository, select green Code button, and select Codespace tab. You will land on a VS Code running on the cloud, with access to a bash terminal.
 
-Just follow the tutorial instructions to learn about some programming, system administration, components, telemetry, commands, events, and other concepts that are usefull on this kind of system. You can start the tutorial now, if you have internet access and a web browser. It will take about 2 hours to complete.
+Just follow the tutorial instructions to learn about some programming, system administration, components, telemetry, commands, events, and other concepts that are usefull on this kind of system. You will also learn about Linux, git, and GitHub. You can start the tutorial now, if you have internet access and a web browser. 
+
+The Hello Tutorial will take about 2 hours to complete. Explore the code and try Section 6 exercises. Move to the other tutorials, including the LED blinking one.
 
 After this introduction on software skills, we can move to some hardware skills.
 
 ## Recommended Equipment
 
-To have  first contact with drones, we suggest you to get a Radiomaster Pocket radio controller and log some hours on SkyDive drone simulator. We need to understand drone parts, piloting, and some concepts of flight. This will help us get a deeper understanding of F' and drone in general.
+To have a first contact with drones, we suggest you to get a Radiomaster Pocket radio controller and log some hours on SkyDive drone simulator. We need to understand drone parts, piloting, and some concepts of flight. This will help us get a deeper understanding of F' and drone in general.
 
 All decisions here were made from the perspective of someone with no previous flight experience and no existing drone equipment. We chose to invest first in a radio controller because it provides practical experience and a better understanding of drone piloting. At the same time, we decided to postpone the decision of whether to buy or build a real drone later on.
 
@@ -84,6 +86,13 @@ The first hours operating a radio controller can be intimidating. There is a lot
 
 In order to start, we need the radio controller, the USB cable and the two batteries. The cable is a data and charge cable that comes with the radio controller. We tagged this cable to avoid misplacing it or mixing it with other similar cables. We purchased a USB adapter from a local seller, because the cable is USB-A to USB-C. Most computers now use USB-A (the smaller one). We could get a new cable, but the fix is working. This adapter and an A-to-A cable can be found on computer shops.
 
+At any point, if feeling lost. Just use the RTN button to return to the last screen until you are on the first screen. Alternatively, just turn the controller off and on again.
+
+If the controller screen is dimed, move a stick.
+
+Remember to turn the controller off before removing the cable.
+
+
 ## The Very First Session
 
 After reading and watching some instructions, we advise to start small. Just check batteries, turn the radio on and off.
@@ -104,30 +113,45 @@ Make sure the radio is off on this model. Hold the power button, turn off the co
 
 On the left side column, press the PAGE button until you are on SETUP 2/12. Now use the wheel to look for Internal RF and External RF as Mode OFF. 
 
-Controller Configuration
+Disabling the radio avoids RF transmission during simulator use, reduces battery consumption, and eliminates concerns related to antenna deployment.
 
-Date and time
+## Setting Date and Time
 
-Disable Radio for Simulator Use saves battery
+The controller has an internal clock. We can set it up to have a reliable clock.
+Press SYS, then press PAGE twice to get RADIO SETUP 3/7. Use the wheel to select date or time item to adjust. 
 
-Games
+From this point on, date and time are precise and the model is set to disable radio.
 
-Throttle and Arm
+## Playing Games
 
-FPV Drone Model
+We suggest you use some games to get a hold of what the controllers do. My favorite game is X-tris.
 
-Charging
+To select a game, press SYS, then use the wheel to select you game. Sticks are sensitive, just go slow and have patience.
 
-USB Charge bottom port
+## Connecting as a Battery Charger
+
+Turn the computer on, connect the USB cable on the computer. Connect the other side on the bottom USB port. Turn the controller on.
+
+You should see a light inside the controller. After a few minutes, the battery voltage indicator should go higher. The battery is charging. 
+
+Using a simulator, the battery lasts much longer than when flying a real drone with the radio on.
+
+
+## Connecting as a Human Interface Device
 
 USB HID top port
 
 
-
-
 ## Drone Simulator
 
-Callibration
+
+Connect USB cable to computer
+
+
+
+Connect USB cable on upper port
+
+Play INTRO
 
 
 
@@ -149,4 +173,4 @@ Callibration
 [^20]: https://cdn.shopify.com/s/files/1/0701/8066/7584/files/Pocket_A1.8.pdf?v=1770617495
 
 [^40]: https://fprime.jpl.nasa.gov/latest/tutorials-hello-world/docs/hello-world/
-[ˆ41]: https://github.com
+[^41]: https://github.com

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Tuim Web GPS</title>
+</head>
+<body>
+  <h1>Tuim Web</h1>
+
+  <button onclick="obterPosicao()">Obter posição</button>
+
+  <pre id="saida">Aguardando...</pre>
+
+  <script>
+    function obterPosicao() {
+      const saida = document.getElementById("saida");
+
+      if (!navigator.geolocation) {
+        saida.textContent = "Geolocalização não suportada.";
+        return;
+      }
+
+      saida.textContent = "Obtendo posição...";
+
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          const c = pos.coords;
+
+          saida.textContent =
+            "Latitude: " + c.latitude + "\n" +
+            "Longitude: " + c.longitude + "\n" +
+            "Precisão: " + c.accuracy + " metros\n" +
+            "Horário: " + new Date(pos.timestamp).toLocaleString();
+        },
+        (erro) => {
+          saida.textContent = "Erro: " + erro.message;
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 10000,
+          maximumAge: 0
+        }
+      );
+    }
+  </script>
+</body>
+</html>

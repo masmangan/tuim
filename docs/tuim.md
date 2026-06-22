@@ -4,15 +4,15 @@
 
 ## Motivation
 
-The project goal is to fly a drone, both piloting and in autonomous flight. The project goal is not only to fly a drone, but also to understand the software, hardware, communications, and control systems that make autonomous flight possible.
+The project goal is to fly a drone, both piloting and in autonomous flight. However, the project goal is not only to fly a drone, but also to understand the software, hardware, communications, and control systems that make autonomous flight possible.
 
-In order to do so, we will need to explore the technologies that make modern autonomous systems possible. The first technology is the F' framework from NASA [^10]. The reason to chose this framework is that it was proven in more than one project and is open source. We have the opportunty to learn from the same framework that was part of the Ingenuity Mars helicopter [^11]. The second technology is the drone itself. We have chosen to start with a drone simulator and, ideally, a real radio controller. In this way, we can start sooner and cheaper.
+In order to do so, we will need to explore the technologies that make modern autonomous systems possible. The first technology is the F' framework from NASA [^10]. The reason to chose this framework is that it was proven in more than one project and is open source. We have the opportunity to learn from the same framework that was part of the Ingenuity Mars helicopter [^11]. The second technology is the drone itself. We have chosen to start with a drone simulator and, ideally, a real radio controller. In this way, we can start sooner and cheaper.
 
 The rest of this document gives a few pointers and some findings we have to share from this experience.
 
 ## F' Hello Tutorial
 
-To have a first a contact with the F', we suggest you to follow the Hello Tutorial [^40], using Github [^41] Codespaces . This experience will let you install software and libraries on a Linux computer, using cloud resources.
+To have a first contact with the F', we suggest you to follow the Hello Tutorial [^40], using Github [^41] Codespaces . This experience will let you install software and libraries on a Linux computer, using cloud resources.
 
 We may find other similar frameworks, but we recommend to stay with F' so we can all share a similar experience and help each other.
 
@@ -22,7 +22,23 @@ Just log in GitHub, create a new repository, select green Code button, and selec
 
 Just follow the tutorial instructions to learn about some programming, system administration, components, telemetry, commands, events, and other concepts that are usefull on this kind of system. You will also learn about Linux, git, and GitHub. You can start the tutorial now, if you have internet access and a web browser. 
 
+It may help to imagine what is going on in the tutorial scenario. Imagine a ground control station with a large antena and a rocket on a launch pad.
+
+A command is send to the rocket and the confirmation is sent back from the rocket. The rocket has some values that can be monitored from a distance, telemetry.
+
+```
+\|/
+-.-                            ||
+ |        telemetry            || HiComponent
+ |                             ||
+/ \                           /__\ 
+
+GDS                           Rocket
+```
+
 The Hello Tutorial will take about 2 hours to complete. Explore the code and try Section 6 exercises. Move to the other tutorials, including the LED blinking one.
+
+The tutorial will download the source code of the F', giving the chance of studying the classes that make the component work.
 
 After this introduction on software skills, we can move to some hardware skills.
 
@@ -113,7 +129,7 @@ Make sure the radio is off on this model. Hold the power button, turn off the co
 
 On the left side column, press the PAGE button until you are on SETUP 2/12. Now use the wheel to look for Internal RF and External RF as Mode OFF. 
 
-Disabling the radio avoids RF transmission during simulator use, reduces battery consumption, and eliminates concerns related to antenna deployment.
+Disabling the radio avoids RF transmission,  during simulator use, reduces battery consumption, and eliminates concerns related to antenna deployment.
 
 ## Setting Date and Time
 
@@ -153,7 +169,31 @@ Connect USB cable on upper port
 
 Play INTRO
 
+## A First Telemetry Source
 
+
+F' telemetry allow us to get readings from distance. We need an object or a source to be measured, usually a kind of vehicle: a rocket, a rover, a drone, or a satellite.
+
+Usually, the readings are confirmation of commands, position and values from sensors. We don't need a complex and expensive vehicle to have a first experience, currently, a smartphone has a set of sensors.
+
+Our first code is a simple web page that collects the GPS position on the web browser client hardware. This first prototype has no relation with F', but allow us to learn about the kind of reading that we are trying to get from a distance.
+
+A real drone could be a more realistic source, but a smartphone is a common item and any computer with a web browser could be used to collect readings.
+
+
+## A F' Prime Bridge to the Web World
+
+We need a way to connect the reading from smartphone with a F' component, similar to the Hi Component from the Hello Tutorial.  
+
+```
+\|/
+-.-                            
+ |        telemetry      | HiComponent | | Bridge |        | Tuim |
+ |                             
+/ \                           
+
+GDS                                 Web server             Web browser
+```
 
 [^1]: https://store.steampowered.com/app/1278060/FPV_SkyDive__FPV_Drone_Simulator/
 
